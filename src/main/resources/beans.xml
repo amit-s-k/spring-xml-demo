@@ -5,13 +5,33 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
     <bean id="movieA" class="com.stackroute.domain.Movie">
-        <property name="actor" ref="actor"></property>
+        <constructor-arg name="actor" ref="actorA"></constructor-arg>
     </bean>
 
-    <bean id="actor" class="com.stackroute.domain.Actor">
-        <property name="name" value="shahrukh"></property>
-        <property name="gender" value="male"></property>
-        <property name="age" value="50"></property>
+    <bean id="movieB" class="com.stackroute.domain.Movie" scope="prototype">
+        <constructor-arg name="actor" ref="actorA"></constructor-arg>
+    </bean>
+
+    <bean name="sampleMovie,movieC" class="com.stackroute.domain.Movie">
+        <constructor-arg name="actor" ref="actorA"></constructor-arg>
+    </bean>
+
+    <bean id="actorA" class="com.stackroute.domain.Actor">
+        <constructor-arg name="name" value="shahrukh"></constructor-arg>
+        <constructor-arg name="gender" value="male"></constructor-arg>
+        <constructor-arg name="age" value="50"></constructor-arg>
+    </bean>
+
+    <bean id="actorB" class="com.stackroute.domain.Actor">
+        <constructor-arg name="name" value="salman"></constructor-arg>
+        <constructor-arg name="gender" value="male"></constructor-arg>
+        <constructor-arg name="age" value="51"></constructor-arg>
+    </bean>
+
+    <bean id="actorC" class="com.stackroute.domain.Actor">
+        <constructor-arg name="name" value="aamir"></constructor-arg>
+        <constructor-arg name="gender" value="male"></constructor-arg>
+        <constructor-arg name="age" value="52"></constructor-arg>
     </bean>
 
 </beans>

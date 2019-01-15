@@ -41,6 +41,6 @@ public class Actor {
 
     @Override
     public String toString(){
-        return "Actor Name: "+this.name+"\nActor Age"+this.age+"\nActor gender "+this.gender;
+        return "Actor Name: "+this.name+"\nActor Age "+this.age+"\nActor gender "+this.gender;
     }
 }
