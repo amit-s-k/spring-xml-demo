@@ -12,7 +12,7 @@ public class Movie {
     }
 
     public void log() {
-        System.out.println("Movie begins in 3 2 1 ...");
+        System.out.println(actor.toString());
     }
 
     public Actor getActor() {

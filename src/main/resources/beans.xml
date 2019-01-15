@@ -14,4 +14,6 @@
         <property name="age" value="50"></property>
     </bean>
 
+    <bean id="beanPostProcessorDemoBean" class="com.stackroute.domain.BeanPostProcessorDemoBean"></bean>
+
 </beans>
