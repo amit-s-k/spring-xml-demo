@@ -13,5 +13,6 @@
         <property name="gender" value="male"></property>
         <property name="age" value="50"></property>
     </bean>
+    <bean id="beanLifecycleDemoBean" class="com.stackroute.domain.BeanLifecycleDemoBean" init-method="customInit" destroy-method="customDestroy"></bean>
 
 </beans>
