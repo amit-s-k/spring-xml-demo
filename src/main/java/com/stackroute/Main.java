@@ -13,7 +13,7 @@ import org.springframework.core.io.ClassPathResource;
 
 public class Main {
 
-    public static final String MOVIE_BEAN_ID = "movieA";
+    private static final String MOVIE_BEAN_ID = "movieA";
     private static final String BEANS_XML = "beans.xml";
 
     public static void main(String[] args) {
@@ -38,6 +38,5 @@ public class Main {
         Movie movie = (Movie) context.getBean(MOVIE_BEAN_ID);
 
         movie.log();
-
     }
 }
